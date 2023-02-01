@@ -82,10 +82,10 @@ const constructor = ((options) => {
             return _self.scriptFile().parent();
         }),
         templateNginxConf: hold(() => {
-            return _self.scriptDirectory().resolve('nginx.conf');
+            return _self.scriptDirectory().resolve('nginx.conf.template');
         }),
         templateDockerfile: hold(() => {
-            return _self.scriptDirectory().resolve('Dockerfile');
+            return _self.scriptDirectory().resolve('Dockerfile.template');
         }),
         runDirectory: hold(() => {
             return _options.tmpDirectory().resolve('ipp5-frontend-builder', _options.runId());
