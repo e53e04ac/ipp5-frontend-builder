@@ -31,8 +31,6 @@ export declare namespace Ipp5FrontendBuilder {
         readonly contextNginxConfRelativePath: string;
     };
 
-    type EventSpecs = Record<never, never>;
-
     type Options = {
         readonly docker: ValueOrGet<string>;
         readonly tmpDirectory: ValueOrGet<FileEntry>;
@@ -52,6 +50,8 @@ export declare namespace Ipp5FrontendBuilder {
         readonly backendStaticHttpPathPrefix: ValueOrGet<string>;
         readonly backendStaticUrl: ValueOrGet<string>;
     };
+
+    type EventSpecs = Record<never, never>;
 
     type _Self = {
         readonly options: Get<Options>;
